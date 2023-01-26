@@ -1,0 +1,76 @@
+<!--
+AUTHOR: Palomaria, Jerome B.
+DESCRIPTION: Fish Creek Animal Clinic - Contact Page
+DATE: Sept. 9, 2022
+VERSION: 1.0
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>
+		Fish Creek Animal Clinic - Contact
+	</title>
+
+</head>
+
+<script>
+	function validateForm(){
+		if(document.forms[0].myEmail.value==""){
+			alert("Please enter an email address.");
+			return false;
+		} //end if
+		return true;
+	} //end validateForm
+</script>
+
+<body>
+	<div id="wrapper">
+
+		<header>
+			<link type="text/css" rel="stylesheet" href="fishcreek.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<h1>Fish Creek Animal Clinic</h1>
+
+		</header>
+
+
+		<nav>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="askthevet.html">Ask the Vet</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="shop.html">Shop</a></li>
+			</ul>
+
+		</nav>
+
+		<main>
+			<h2>Contact Fish Creek</h2>
+			<form method="post" action="http://webdevbasics.net/scripts/fishcreek.php" onsubmit="return validateForm();">
+				<label for="myName">Name</label>
+				<input type="text" name="myName" id="myName">
+
+				<label for="myEmail">E-mail</label>
+				<input type="email" name="myEmail" id="myEmail">
+
+				<label for="myComments">Comments</label>
+				<textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+
+				<input type="submit" name="btnSubmit" id="mySubmit" value="Send Now">
+			</form>
+		</main>
+
+		<footer>
+			Copyright &copy; 2018 Fish Creek Animal Clinic<br>
+			<a href="mailto:jerome.palomaria@cit.edu">jerome.palomaria@cit.edu</a>
+		</footer>
+
+	</div>
+</body>
+
+</html>
