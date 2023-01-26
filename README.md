@@ -1,3 +1,3 @@
 # jbpalomaria.github.io
-Fish Animal Creek Clinic
-This is a case study project I developed as a requirement from our Web Development Subject. 
+Fish Animal Creek Clinic -
+This is a case study project I created as a requirement from our Web Development Subject. 
